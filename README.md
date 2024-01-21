@@ -2,13 +2,16 @@
 
 Clonamos el repositorio git:
 
+````
 git clone https://github.com/jbravo/spring-petclinic-deploy.git
+````
 
 # Entorno
 
 Seleccioamos el entorno en el que instalar. En este ejemplo, solo hay un entorno "int" y los ficheros de configuración los tenemos que cambiar antes de la instalación. Cuando este terminado todo integrado y terminado, el entorno ira por rama.
 
 ````
+cd spring-petclinic-deploy
 cd int
 ````
 
