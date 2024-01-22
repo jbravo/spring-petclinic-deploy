@@ -40,6 +40,13 @@ LOG:  autovacuum launcher started
 LOG:  database system is ready to accept connections
 ````
 
+Y ahora podemos crear la estructura y los datos con los ficheros que hay en la carpeta **<entorno>/config/db**:
+
+````
+initDB.sql
+populateDB.sql
+````
+
 **Nota**: Por ahora es una bbdd docker. Cuando no sea Docker, supongemos que ya estara creada y que se cargara de datos por otro lado.
 
 ## Levantamos el API
