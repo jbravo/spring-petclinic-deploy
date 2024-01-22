@@ -46,7 +46,14 @@ LOG:  database system is ready to accept connections
 
 Arrancamos el api, apuntando al fichero de configuraciónn.
 
-Configuramos el fichero petclinic-rest.properties a nuestro gusto
+Configuramos el fichero **<entorno>/config/petclinic-rest/petclinic-rest.properties** a nuestro gusto. Los valores por defecto son:
+
+````
+spring.profiles.active=postgresql,spring-data-jpa
+spring.datasource.url=jdbc:postgresql://amcdocker.costaisa.org:5432/petclinic
+````
+
+Y a continuación arrancamos la aplicación.
 
 ````
 docker run -it -d --env-file=${PWD}/config/petclinic-rest/petclinic-rest.properties --name petclinic-rest --restart=always -p 9966:9966 jbravo/spring-petclinic-rest:3.2.1
